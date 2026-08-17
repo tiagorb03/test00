@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PyLab — Python Playground</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="logo">
+                <div class="logo-icon">Py</div>
+
+                <div>
+                    <strong>PyLab</strong>
+                    <span>Python Playground</span>
+                </div>
+            </div>
+
+            <nav class="menu">
+
+                <p class="menu-title">PROJETO</p>
+
+                <a href="#" class="menu-item active">
+                    <span>⌂</span>
+                    Início
+                </a>
+
+                <a href="#" class="menu-item">
+                    <span>▣</span>
+                    Meus códigos
+                </a>
+
+                <a href="#" class="menu-item">
+                    <span>＋</span>
+                    Novo projeto
+                </a>
+
+                <p class="menu-title">FERRAMENTAS</p>
+
+                <a href="#" class="menu-item">
+                    <span>▶</span>
+                    Executar código
+                </a>
+
+                <a href="#" class="menu-item">
+                    <span>⌘</span>
+                    Console
+                </a>
+
+                <a href="#" class="menu-item">
+                    <span>⚙</span>
+                    Configurações
+                </a>
+
+            </nav>
+
+            <div class="sidebar-bottom">
+
+                <div class="python-status">
+                    <span class="status-dot"></span>
+
+                    <div>
+                        <strong>Python conectado</strong>
+                        <small>Python 3.x</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </aside>
+
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="main">
+
+            <!-- HEADER -->
+            <header class="topbar">
+
+                <div>
+                    <span class="breadcrumb">PyLab</span>
+                    <span class="separator">/</span>
+                    <strong>Meu primeiro código</strong>
+                </div>
+
+                <div class="top-actions">
+
+                    <button class="icon-button" title="Tema">
+                        ◐
+                    </button>
+
+                    <button class="profile">
+                        <span>TH</span>
+                    </button>
+
+                </div>
+
+            </header>
+
+
+            <!-- CONTEÚDO -->
+            <section class="content">
+
+                <!-- HERO -->
+                <div class="hero">
+
+                    <div class="hero-text">
+
+                        <span class="badge">
+                            PYTHON PLAYGROUND
+                        </span>
+
+                        <h1>
+                            Teste seus códigos
+                            <span>Python.</span>
+                        </h1>
+
+                        <p>
+                            Escreva, execute e teste seus códigos Python
+                            diretamente nesta plataforma.
+                        </p>
+
+                    </div>
+
+                    <div class="hero-code">
+
+                        <div class="code-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+
+                        <pre><code><span class="keyword">print</span>(<span class="string">"Olá, mundo!"</span>)
+
+<span class="keyword">for</span> i <span class="keyword">in</span> <span class="function">range</span>(<span class="number">5</span>):
+    <span class="keyword">print</span>(i)</code></pre>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DASHBOARD -->
+                <div class="dashboard-grid">
+
+                    <!-- EDITOR -->
+                    <section class="panel editor-panel">
+
+                        <div class="panel-header">
+
+                            <div class="panel-title">
+                                <span class="file-icon">🐍</span>
+                                main.py
+                            </div>
+
+                            <div class="editor-actions">
+
+                                <button class="secondary-button">
+                                    Limpar
+                                </button>
+
+                                <button class="run-button">
+                                    ▶ Executar
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="editor">
+
+                            <div class="line-numbers">
+                                1<br>
+                                2<br>
+                                3<br>
+                                4<br>
+                                5<br>
+                                6<br>
+                                7<br>
+                                8<br>
+                                9<br>
+                                10
+                            </div>
+
+                            <textarea spellcheck="false"># Meu primeiro programa Python
+
+nome = "Mundo"
+
+print(f"Olá, {nome}!")
+
+for numero in range(1, 6):
+    print(f"Número: {numero}")</textarea>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- CONSOLE -->
+                    <section class="panel console-panel">
+
+                        <div class="panel-header">
+
+                            <div class="panel-title">
+                                <span>⌁</span>
+                                Console
+                            </div>
+
+                            <span class="console-status">
+                                Pronto
+                            </span>
+
+                        </div>
+
+                        <div class="console">
+
+                            <div class="console-line">
+                                <span class="prompt">$</span>
+                                python main.py
+                            </div>
+
+                            <div class="output">
+                                Olá, Mundo!<br>
+                                Número: 1<br>
+                                Número: 2<br>
+                                Número: 3<br>
+                                Número: 4<br>
+                                Número: 5
+                            </div>
+
+                            <div class="success">
+                                ✓ Processo finalizado com sucesso.
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+
+                <!-- CARDS -->
+                <div class="stats">
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon purple">
+                            </div>
+
+                        <div>
+                            <span>Códigos executados</span>
+                            <strong>24</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon green">
+                            ✓
+                        </div>
+
+                        <div>
+                            <span>Execuções com sucesso</span>
+                            <strong>22</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon orange">
+                            ⚡
+                        </div>
+
+                        <div>
+                            <span>Tempo médio</span>
+                            <strong>0.42s</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon blue">
+                            🐍
+                        </div>
+
+                        <div>
+                            <span>Versão</span>
+                            <strong>Python 3.x</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FOOTER -->
+                <footer>
+
+                    <span>
+                        PyLab © 2026
+                    </span>
+
+                    <span>
+                        Ambiente de testes Python
+                    </span>
+
+                </footer>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
